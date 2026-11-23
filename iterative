@@ -1,0 +1,26 @@
+
+def getSum(limit):
+    total = 0
+
+    for i in range(1, limit + 1):
+        total = total + i
+
+    return total
+
+
+num = int(input("enter a positive whole number: "))
+
+if num > 0:
+    answer = getSum(num)
+
+    formula = num * (num + 1) // 2
+
+    print("sum:", answer)
+
+    if answer == formula:
+        print("the answer is correct!")
+    else:
+        print("the answer is incorrect!")
+
+else:
+    print("invalid input! enter a positive number.")
